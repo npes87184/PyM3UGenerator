@@ -17,6 +17,7 @@ python3 main.py
 [![Screenshot](https://raw.githubusercontent.com/npes87184/PyM3UGenerator/master/screenshots/1.png)](https://github.com/npes87184/PyM3UGenerator/blob/master/screenshots/1.png)
 
 ## License:
+```
 MIT License
 
 Copyright (c) 2018 npes87184
@@ -38,5 +39,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
 
+## Articles
 
+* [Walkman Playlist](https://npes87184.github.io/2018-04-17-PyM3UGenerator/)
