@@ -78,6 +78,7 @@ class M3uGenerator(App):
         main_container = gui.VBox(width=400, height=140,
                         style={'align': 'center', 'border': '5px #FFAC55 solid'})
         btn_container = gui.HBox(width=300, height=30)
+        link_to_github =  gui.Link('https://github.com/npes87184/PyM3UGenerator', 'Fork me here')
 
         self.lbl = gui.Label('Please choose a folder')
         self.select_bt = gui.Button('Select folder', width=100, height=30)
@@ -91,6 +92,7 @@ class M3uGenerator(App):
 
         main_container.append(self.lbl)
         main_container.append(btn_container)
+        main_container.append(link_to_github)
         body.append(main_container)
 
         return body
