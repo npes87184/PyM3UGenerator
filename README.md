@@ -4,7 +4,6 @@ Collect musics in selected directory and its subdirectory to a Playlist (*.m3u8)
 
 ## Requirements:
 * python3
-* pyQt5
 
 ## Run:
 ```bash
@@ -12,9 +11,6 @@ git clone https://github.com/npes87184/PyM3UGenerator.git
 cd PyM3UGenerator
 python3 main.py
 ```
-
-## Screenshotes:
-[![Screenshot](https://raw.githubusercontent.com/npes87184/PyM3UGenerator/master/screenshots/1.png)](https://github.com/npes87184/PyM3UGenerator/blob/master/screenshots/1.png)
 
 ## License:
 ```
