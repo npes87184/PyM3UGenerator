@@ -12,6 +12,13 @@ cd PyM3UGenerator
 python3 main.py
 ```
 
+## Unittest:
+
+You can run unittest simply by
+```bash
+python3 -m test.m3u
+```
+
 ## License:
 ```
 MIT License
