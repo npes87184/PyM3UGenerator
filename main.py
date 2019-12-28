@@ -41,14 +41,14 @@ class M3uGenerator(App):
             support_extension = ['.mp3', '.m3u', '.wma', '.flac',
 				'.wav', '.mc', '.aac', '.m4a',
 				'.ape', '.dsf', '.dff']
-            filename, extension = os.path.splitext(path)
+            _, extension = os.path.splitext(path)
             if extension.lower() in support_extension:
                 return True
             return False
 
         def create_playList(select_dir):
             m3u_list = []
-            for root, subdirs, files in os.walk(select_dir):
+            for root, _, files in os.walk(select_dir):
                 for filename in files:
                     rel_dir = os.path.relpath(root, select_dir)
                     if rel_dir == ".":
