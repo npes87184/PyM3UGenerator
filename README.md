@@ -16,7 +16,7 @@ python3 main.py
 
 You can run unittest simply by
 ```bash
-python3 -m test.m3u
+python3 -m tests.test_m3u
 ```
 
 ## License:
