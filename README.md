@@ -1,5 +1,8 @@
 PyM3UGenerator
 ============
+
+![Test Status](https://github.com/npes87184/PyM3UGenerator/workflows/unittest/badge.svg)
+
 Collect musics in selected directory and its subdirectory to a Playlist (*.m3u8).
 
 ## Requirements:
