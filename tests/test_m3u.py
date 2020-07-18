@@ -31,6 +31,8 @@ class TestM3u(unittest.TestCase):
                               'multiple_level/flac.flac', 'multiple_level/level_1/mp3.mp3',
                               'multiple_level/level_1/flac.flac', 'single_level/mp3.mp3',
                               'single_level/flac.flac']
+        # The order of this list depends on OS. To prevent failing on different platforms. We sort it.
+        cls._expect_result.sort()
 
     @classmethod
     def tearDownClass(cls):
@@ -41,7 +43,10 @@ class TestM3u(unittest.TestCase):
         self.assertFalse(lib.m3u.is_music("/i_am_pptx.pptx"))
 
     def test_create_playList(self):
-        self.assertEqual(self._expect_result, lib.m3u.create_playList(self._test_dir))
+        actual_result = lib.m3u.create_playList(self._test_dir)
+        # The order of this list depends on OS. To prevent failing on different platforms. We sort it.
+        actual_result.sort()
+        self.assertEqual(self._expect_result, actual_result)
 
     def test_gen_m3u(self):
         m3u_path = '@test_temp_m3u_dir@/@test_temp_m3u_dir@.m3u8'
@@ -50,6 +55,8 @@ class TestM3u(unittest.TestCase):
         with open(m3u_path) as f:
             content = f.readlines()
         content = [x.strip() for x in content]
+        # The order of this list depends on OS. To prevent failing on different platforms. We sort it.
+        content.sort()
         self.assertEqual(self._expect_result, content)
 
 if __name__ == '__main__':
