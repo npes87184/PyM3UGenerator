@@ -21,6 +21,7 @@ def create_playList(select_dir):
                 path = os.path.join(rel_dir, filename)
             if is_music(path):
                 m3u_list.append(path)
+    m3u_list.sort()
     return m3u_list
 
 def gen_m3u(select_dir):
